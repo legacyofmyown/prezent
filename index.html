@@ -10,10 +10,11 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
+.pz-main {
+  padding: 10px 0;
   text-align: center;
 }
+.top-buffer { padding-top:10px; }
 </style>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -41,27 +42,42 @@ body {
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </div><!-- end of navbar -->
 
     <div class="container">
-      
-      <div class="starter-template">
+      <div class="pz-main tabbable">
         <ul class="nav nav-tabs">
-	  <li class="active"><a href="#">Classroom</a></li>
-	  <li><a href="#">Info</a></li>
-	  <li><a href="#">Board</a></li>
-        </ul>
-	<div class="row pull-right">
-        <form class="" role="search">
-        <input type="text" class="form-control" placeholder="Search">
-        </form>
+	  <li class="active"><a href="#classroom" data-toggle="tab">Classroom</a></li>
+	  <li><a href="#info" data-toggle="tab">Info</a></li>
+	  <li><a href="#board" data-toggle="tab">Board</a></li>
+	 
+	</ul>
+
+	<div class="row top-buffer">
+		<div class="col-xs-6">Todays Date</div>
+		<div class="col-xs-6">
+		<form class="pull-right" role="search">
+		<div class="input-group input-group-sm">
+		<span class="input-group-addon btn btn-default"><span class="glyphicon glyphicon-search"></span></span>
+		<input id="search" type="text" class="form-control" placeholder="Search">
+		</div>
+		</form>
+		</div>
 	</div>
-	<div class="row">
-        Todays Date
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+	<div class="tab-content">
+		<div class="tab-pane" id="classroom">
+		  classroom stuff
+		</div>
+		<div class="tab-pane" id="info">
+		  info stuff
+		</div>
+		<div class="tab-pane" id="board">
+		  Board stuff
+		</div>
+	</div>
       </div>
-    </div>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default text-center" role="navigation">
     <button type="button" class="btn btn-default navbar-btn">N</button>
     <button type="button" class="btn btn-default navbar-btn">B</button>
     <button type="button" class="btn btn-default navbar-btn">P</button>
@@ -73,8 +89,9 @@ body {
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://code.jquery.com/jquery.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
+<script src="http://netdna.bootstrapcdn.cform-groupom/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
