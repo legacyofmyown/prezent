@@ -14,7 +14,7 @@ body {
   padding: 10px 0;
   text-align: center;
 }
-.top-buffer { padding-top:10px; }
+.top-buffer { padding:10px 0; }
 </style>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -65,8 +65,8 @@ body {
 		</div>
 	</div>
 
-	<div class="tab-content">
-		<div class="tab-pane" id="classroom">
+	<div class="tab-content jumbotron">
+		<div class="tab-pane active" id="classroom">
 		  classroom stuff
 		</div>
 		<div class="tab-pane" id="info">
@@ -77,19 +77,19 @@ body {
 		</div>
 	</div>
       </div>
-    <nav class="navbar navbar-default text-center" role="navigation">
-    <button type="button" class="btn btn-default navbar-btn">N</button>
-    <button type="button" class="btn btn-default navbar-btn">B</button>
-    <button type="button" class="btn btn-default navbar-btn">P</button>
-    <button type="button" class="btn btn-default navbar-btn">C</button>
-    <button type="button" class="btn btn-default navbar-btn">R</button>
-    </nav>
+    <div class="row text-center"><div class="btn-group btn-group-lg">
+    <button type="button" class="btn btn-primary">N</button>
+    <button type="button" class="btn btn-primary btn-default">B</button>
+    <button type="button" class="btn btn-primary btn-default">P</button>
+    <button type="button" class="btn btn-primary btn-default">C</button>
+    <button type="button" class="btn btn-primary btn-default">R</button>
+    </div></div><!-- end of button row -->
     </div><!-- /.container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://code.jquery.com/jquery.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="http://netdna.bootstrapcdn.cform-groupom/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 <script src="script.js"></script>
 </body>
