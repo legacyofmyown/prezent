@@ -1,9 +1,12 @@
-var express = require('express');
+var express = require("express");
 var app = express();
+app.use(express.logger());
 
-app.get('/hello.txt', function(req,res){
-    var body = 'Hello World';
-    res.setHeader('Content-Type','text/plain');
-    res.setHeader('Content-Length', body.length);
-    res.end(body);
+app.get('/', function(request, response) {
+  response.send('Hello World!');
+});
+
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
 });
