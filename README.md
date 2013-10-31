@@ -1,4 +1,0 @@
-prezent
-=======
-
-checkins for class
