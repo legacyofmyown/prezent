@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Prezent</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prezent</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <!-- Optional theme -->
@@ -14,17 +15,10 @@ body {
   padding: 10px 0;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
 .top-buffer { padding:10px 0; }
 .pz-small { font-size: 10px; }
->>>>>>> master
 </style>
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="../../assets/js/html5shiv.js"></script>
-	<script src="../../assets/js/respond.min.js"></script>
-<![endif]-->
+
 </head>
 
 <body>
@@ -46,14 +40,16 @@ body {
 	 
 	</ul>
 
-	<div class="row">
-        <div class="col-xs-8">Todays Date</div>
-	<div class="col-xs-4">
-	<form class="pull-right" role="search">
-	<div class=""form-group">
-        <input type="text" class="form-control" placeholder="Search">
-        </form>
-	</div>
+	<div class="row top-buffer">
+		<div class="col-xs-6">Todays Date</div>
+		<div class="col-xs-6">
+		<form class="pull-right" role="search">
+		<div class="input-group input-group-sm">
+		<span class="input-group-addon btn btn-default"><span class="glyphicon glyphicon-search"></span></span>
+		<input id="search" type="text" class="form-control" placeholder="Search">
+		</div>
+		</form>
+		</div>
 	</div>
 
 	<div class="tab-content jumbotron">
@@ -68,15 +64,6 @@ body {
 		</div>
 	</div>
       </div>
-<<<<<<< HEAD
-    <nav class="navbar navbar-default" role="navigation">
-    <button type="button" class="btn btn-default navbar-btn">N</button>
-    <button type="button" class="btn btn-default navbar-btn">B</button>
-    <button type="button" class="btn btn-default navbar-btn">P</button>
-    <button type="button" class="btn btn-default navbar-btn">C</button>
-    <button type="button" class="btn btn-default navbar-btn">R</button>
-    </nav>
-=======
     <div class="row text-center"><div class="btn-group">
     <button type="button" class="btn btn-primary pz-small">
       <span class= "glyphicon glyphicon-paperclip" > </span>
@@ -100,7 +87,6 @@ body {
 	</button>
 
     </div></div><!-- end of button row -->"
->>>>>>> master
     </div><!-- /.container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
