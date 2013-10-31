@@ -6,15 +6,18 @@
 <title>Prezent</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
 <!-- Optional theme -->
 <style>
+.navbar-inverse .navbar-brand {color: white;}
+.navbar-inverse .navbar-link {color:white;}
 header {text-align: right;}
 body {
-  padding-top: 50px;
+  padding-top: 50px;text-align: left;
 }
 .pz-main {
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
 }
 .top-buffer { padding:10px 0; }
 .pz-small { font-size: 10px; } 
@@ -23,6 +26,12 @@ body {
 .nav-tabs>li.active>a.yellow, .yellow{background-color:#F7DF07; color:white}
 .box{background-color:white; border:2px solid black; padding:0 60px 0 60px; margin-top:5px;}
 h1, h2, h3 { margin-top: 5px; margin-bottom: 5px; line-height:0.8; }
+h4{font-size:10px; margin-top: 5px; margin-bottom: 5px; color: red;}
+.btn-primary { background-color: black; border-color:gray}
+.jumbotron { background-color:#E8E2EA; margin-bottom: 20px; padding-top: 40px;
+padding-bottom: 40px; text-align: center;
+}
+
 </style>
 
 </head>
@@ -41,8 +50,9 @@ h1, h2, h3 { margin-top: 5px; margin-bottom: 5px; line-height:0.8; }
     <div class="container">
 	<div class="text-right">
 	<h1>Classroom Name</h1>
-	<h2>Teacher Name</h2>
-	<h3>Class Period/Time:(UTC)</h3>
+	<h2>Period/Time(UTC)</h2>
+	<h3>Teacher Name</h3>
+	<h4>(prezent class)</h4>
 	</div>
       <div class="pz-main tabbable">
         <ul class="nav nav-tabs">
@@ -53,7 +63,7 @@ h1, h2, h3 { margin-top: 5px; margin-bottom: 5px; line-height:0.8; }
 	</ul>
 
 	<div class="row top-buffer">
-		<div class="col-xs-6">Todays Date</div>
+		<div class="col-xs-6">Today's Date</div>
 		<div class="col-xs-6 ">
 		<form class="pull-right" role="search">
 		<div class="input-group input-group-sm">
@@ -77,9 +87,9 @@ h1, h2, h3 { margin-top: 5px; margin-bottom: 5px; line-height:0.8; }
 			</div>
 			<div class="row">
 				<div class="col-xs-6 col-md-offset-3 box">Today's Homework Assignment</div>
-				
 			</div>
 		</div>
+
 
 		<div class="tab-pane" id="info">
 		  <div class="jumbotron">Classroom Info </div>
@@ -90,6 +100,28 @@ h1, h2, h3 { margin-top: 5px; margin-bottom: 5px; line-height:0.8; }
 		</div>
 	</div>
      </div>
+
+<div class="row top-buffer">
+		<div class="col-xs-6">Yesterday Date</div>
+		</div>
+	</div>
+<div class="tab-content">
+		<div class="tab-pane active" id="classroom">
+			<div class="jumbotron"> Yesterday Lesson Plan </div> 
+			<div class="row">
+				<div class="col-xs-6 col-md-offset-3 box">Add Personal Note</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-offset-3 box">In-class Question</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-offset-3 box">Yesterday's Homework Assignment</div>
+			</div>
+		</div>
+
+
     <div class="row text-center"><div class="btn-group">
 
 
