@@ -1,0 +1,9 @@
+body {
+  padding-top: 50px;
+}
+.pz-main {
+  padding: 10px 0;
+  text-align: center;
+}
+.top-buffer { padding:10px 0; }
+.pz-small { font-size: 10px; }
