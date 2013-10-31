@@ -31,7 +31,17 @@ h4{font-size:10px; margin-top: 5px; margin-bottom: 5px; color: red;}
 .jumbotron { background-color:#E8E2EA; margin-bottom: 20px; padding-top: 40px;
 padding-bottom: 40px; text-align: center;
 }
-
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  font-size:2em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
 </style>
 
 </head>
@@ -88,6 +98,10 @@ padding-bottom: 40px; text-align: center;
 			<div class="row">
 				<div class="col-xs-6 col-md-offset-3 box">Today's Homework Assignment</div>
 			</div>
+			<div class="row">
+				<div class="rating"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+			</div>
 		</div>
 
 
@@ -100,26 +114,6 @@ padding-bottom: 40px; text-align: center;
 		</div>
 	</div>
      </div>
-
-<div class="row top-buffer">
-		<div class="col-xs-6">Yesterday Date</div>
-		</div>
-	</div>
-<div class="tab-content">
-		<div class="tab-pane active" id="classroom">
-			<div class="jumbotron"> Yesterday Lesson Plan </div> 
-			<div class="row">
-				<div class="col-xs-6 col-md-offset-3 box">Add Personal Note</div>
-				
-			</div>
-			<div class="row">
-				<div class="col-xs-6 col-md-offset-3 box">In-class Question</div>
-				
-			</div>
-			<div class="row">
-				<div class="col-xs-6 col-md-offset-3 box">Yesterday's Homework Assignment</div>
-			</div>
-		</div>
 
 
     <div class="row text-center"><div class="btn-group">
